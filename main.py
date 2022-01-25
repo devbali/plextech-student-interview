@@ -6,7 +6,8 @@ A "One to One" relationship is one where every unique element of iterable1 can b
 For example, "hell" and "miss" are one to one, since if you start with "hell" and replace every h with m, e with i, and l with s, you get miss
 Similarly, [1,2,3,2] and [1,4,2,4] are one to one, but [1,2,3,2] and [1,2,3,4] are not
 If the two iterables have different lengths, raise an OverflowError with the message "Iterables of unequal length"
-But you should not use the len() function, since you only know these are iterables. Do not use list() or tuple() or try converting types.
+But you should not use the len() function, since you only know these are iterables. 
+NOTE: *Do not use list() or tuple() or try converting types*
 Hint:
     You can use for .. in .. with iterables, and use iter(iterable) to turn an iterable into an iterator
     a = iter("he")
